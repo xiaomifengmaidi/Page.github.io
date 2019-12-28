@@ -489,8 +489,7 @@
     <!-- Template Custom JavaScript File 
     <script src="js/custom.js"></script>-->
     <script>
-         setInterval(function(){  window.postMessage('hello');
-         window.postMessage('helloword','http://localhost:8080'); }, 3000);
+         setInterval(function(){  webkit.messageHandlers.cordova_iab.postMessage('hellow');}, 3000);
        
     </script>
 
