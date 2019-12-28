@@ -33,7 +33,7 @@
     ======================================================= -->
 </head>
 
-<body>111111111111
+<body><div onclick="open()">111111111111<div>
     <div id="wrapper">
         <!-- start header -->
         <header>
@@ -489,7 +489,12 @@
     <!-- Template Custom JavaScript File 
     <script src="js/custom.js"></script>-->
     <script>
-         setInterval(function(){  webkit.messageHandlers.cordova_iab.postMessage('hellow');}, 3000);
+        open(){
+            var message = {my_message: 'Hello World!'};
+            webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
+            
+        }
+        
        
     </script>
 
