@@ -490,8 +490,9 @@
     <script src="js/custom.js"></script>-->
     <script>
         open(){
+            alert(111);
             var message = {my_message: 'Hello World!'};
-            webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
+            window.webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
             
         }
         
