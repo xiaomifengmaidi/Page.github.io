@@ -6,8 +6,15 @@ function clickCheckbox()
   {
     alert(111);
            var message = {my_message: 'Hello World!'};
-webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
-          // window.webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
+ //webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
+          window.webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
+  }
+  function clickCheckbox1()
+  {
+    alert(111);
+           var message = {my_message: 'Hello World!'};
+ webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
+        
   }
 </script>
 </head>
@@ -17,6 +24,7 @@ webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
 <input type="checkbox" id="check1" />
 <br />
 <input type="button" onclick="clickCheckbox()" value="Click checkbox" />
+  <input type="button" onclick="clickCheckbox1()" value="11111111" />
 </form>
 
 </body>
