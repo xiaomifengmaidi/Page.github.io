@@ -1,31 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<html>
 <head>
-    <meta charset="utf-8">
-  
-
-    <script>
-     function open(){
-            alert(111);
+<script type="text/javascript">
+function clickCheckbox()
+  {
+    alert(111);
          //   var message = {my_message: 'Hello World!'};
          //   window.webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(message));
-     }
-            
-        
-        
-       
-    </script>
+  }
+</script>
 </head>
-
 <body>
-    <input type="button" onclick="open()" value="Click checkbox" />
-    <div onclick="open()">1111</div>
- 
 
-   
-    
+<form>
+<input type="checkbox" id="check1" />
+<br />
+<input type="button" onclick="clickCheckbox()" value="Click checkbox" />
+</form>
 
 </body>
-
 </html>
